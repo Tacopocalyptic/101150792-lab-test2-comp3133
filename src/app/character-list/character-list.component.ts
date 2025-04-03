@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { NgIf } from '@angular/common';
 import { FetchAPIService } from '../service/fetch-api.service';
 import { Character } from '../models/character';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-character-list',
-  imports: [NgIf],
+  imports: [NgIf, MatCardModule],
   templateUrl: './character-list.component.html',
   styleUrl: './character-list.component.css'
 })

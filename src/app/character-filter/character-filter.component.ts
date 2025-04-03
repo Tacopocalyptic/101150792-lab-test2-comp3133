@@ -3,10 +3,13 @@ import { FormsModule } from '@angular/forms';
 import { Character } from '../models/character';
 import { NgIf } from '@angular/common';
 import { FetchAPIService } from '../service/fetch-api.service';
+import {MatCardModule} from '@angular/material/card';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @Component({
   selector: 'app-character-filter',
-  imports: [NgIf, FormsModule],
+  imports: [NgIf, FormsModule, MatCardModule, MatSelectModule, MatFormFieldModule],
   templateUrl: './character-filter.component.html',
   styleUrl: './character-filter.component.css'
 })

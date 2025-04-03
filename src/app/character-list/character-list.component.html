@@ -1,13 +1,15 @@
 <h1>Character List</h1>
 
-@for (character of characters; track $index) {
-    <div>
-        <img src={{character.image}} />
-        <h3>{{ character.name }}</h3>
-        <p *ngIf="character.house">House {{ character.house }}</p>
-        <a [href]="`/details/${character.id}`">Details</a>
-    </div>
-      
-}@empty {
-    <h2>No Characters found...</h2>
-}
+<div class="card-container">
+    @for (character of characters; track $index) {
+        <mat-card class="character-card">
+            <img mat-card-image *ngIf="character.image" src={{character.image}} />
+            <mat-card-title>{{ character.name }}</mat-card-title>
+            <mat-card-subtitle *ngIf="character.house">House {{ character.house }}</mat-card-subtitle>
+            <a class="card-button" [href]="`/details/${character.id}`">Details</a>
+        </mat-card>
+        
+    }@empty {
+        <h2>No Characters found...</h2>
+    }
+</div>
