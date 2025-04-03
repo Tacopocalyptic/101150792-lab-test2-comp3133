@@ -1,4 +1,10 @@
-# 101150792LabTest2Comp3133
+# About this project
+
+This is an Angular application using HttpClient to perform fetch requests and display the fetched information appropriately using the API available at https://hp-api.onrender.com
+
+### Deployed on [Vercel](https://vercel.com/josephines-projects-f4b00ea6/101150792-lab-test2-comp3133/6AEfEm29zd2ZBPJFrs2WTLWcLZtG)
+
+# 101150792 - LabTest2 - Comp3133
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
 
