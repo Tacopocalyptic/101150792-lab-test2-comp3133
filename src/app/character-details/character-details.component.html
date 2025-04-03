@@ -1,8 +1,8 @@
-<div *ngIf="character">
+<div *ngIf="character; else noCharacter" class="container">
     <div>
-        <img src={{character.image}} />
+        <img src={{character.image}} style="max-width: 350px;"/>
     </div>
-    <div>
+    <div class="character-info">
         <h3>{{ character.name }}</h3>
         <p *ngIf="character.species">Species: {{ character.species }}</p>
         <p *ngIf="character.house">House {{ character.house }}</p>
@@ -17,3 +17,7 @@
         <p *ngIf="character.actor">Actor: {{ character.actor }}</p>
     </div>
 </div>
+
+<ng-template #noCharacter>
+    <h4>Character not found</h4>
+</ng-template>

@@ -6,7 +6,7 @@
             <img mat-card-image *ngIf="character.image" src={{character.image}} />
             <mat-card-title>{{ character.name }}</mat-card-title>
             <mat-card-subtitle *ngIf="character.house">House {{ character.house }}</mat-card-subtitle>
-            <a class="card-button" [href]="`/details/${character.id}`">Details</a>
+            <a mat-stroked-button [href]="`/details/${character.id}`">Details</a>
         </mat-card>
         
     }@empty {
