@@ -21,7 +21,7 @@ export class CharacterFilterComponent {
       this.fetchAPIService.getCharactersByHouse(this.houseFilter).subscribe(
         {
           next: (response: any) => {
-            console.log(response);
+            // console.log(response);
             this.characters = response;
           },
           error: (error: any) => {

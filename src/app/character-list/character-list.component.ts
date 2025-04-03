@@ -22,7 +22,7 @@ export class CharacterListComponent {
     this.fetchAPIService.getCharacters().subscribe(
       {
         next: (response: any) => {
-          console.log(response);
+          // console.log(response);
           this.characters = response;
         },
         error: (error: any) => {

@@ -1,6 +1,19 @@
 <div *ngIf="character">
-    <img src={{character.image}} />
-    <h3>{{ character.name }}</h3>
-    <p *ngIf="character.house">House {{ character.house }}</p>
-    <a [href]="`/details/${character.id}`">Details</a>
+    <div>
+        <img src={{character.image}} />
+    </div>
+    <div>
+        <h3>{{ character.name }}</h3>
+        <p *ngIf="character.species">Species: {{ character.species }}</p>
+        <p *ngIf="character.house">House {{ character.house }}</p>
+        <p>Wizard: {{ character.wizard }}</p>
+        <p *ngIf="character.ancestry">Ancestry: {{ character.ancestry }}</p>
+        <p>Wand</p>
+        <ul>
+            <li *ngIf="character.wand.wood">Wood: {{character.wand.wood}}</li>
+            <li *ngIf="character.wand.wood">Core: {{character.wand.core}}</li>
+            <li *ngIf="character.wand.wood">Length: {{character.wand.length}}</li>
+        </ul>
+        <p *ngIf="character.actor">Actor: {{ character.actor }}</p>
+    </div>
 </div>
