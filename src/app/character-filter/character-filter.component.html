@@ -1,0 +1,21 @@
+<h1>Character By House</h1>
+
+<label for="house">Filter by House: </label>
+<select [(ngModel)]="houseFilter" (change)="applyFilter()">
+    <option value="gryffindor">Gryffindor</option>
+    <option value="slytherin">Slytherin</option>
+    <option value="hufflepuff">Hufflepuff</option>
+    <option value="ravenclaw">Ravenclaw</option>
+</select>
+
+@for (character of characters; track $index) {
+    <div>
+        <img src={{character.image}} />
+        <h3>{{ character.name }}</h3>
+        <p *ngIf="character.house">House {{ character.house }}</p>
+        <a [href]="`/details/${character.id}`">Details</a>
+    </div>
+      
+}@empty {
+    <h2>No Characters found...</h2>
+}

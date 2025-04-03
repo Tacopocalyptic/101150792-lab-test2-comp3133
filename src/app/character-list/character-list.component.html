@@ -1,0 +1,13 @@
+<h1>Character List</h1>
+
+@for (character of characters; track $index) {
+    <div>
+        <img src={{character.image}} />
+        <h3>{{ character.name }}</h3>
+        <p *ngIf="character.house">House {{ character.house }}</p>
+        <a [href]="`/details/${character.id}`">Details</a>
+    </div>
+      
+}@empty {
+    <h2>No Characters found...</h2>
+}

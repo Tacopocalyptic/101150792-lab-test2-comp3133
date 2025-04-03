@@ -1,0 +1,6 @@
+<div *ngIf="character">
+    <img src={{character.image}} />
+    <h3>{{ character.name }}</h3>
+    <p *ngIf="character.house">House {{ character.house }}</p>
+    <a [href]="`/details/${character.id}`">Details</a>
+</div>
