@@ -2,7 +2,7 @@
 
 This is an Angular application using HttpClient to perform fetch requests and display the fetched information appropriately using the API available at https://hp-api.onrender.com
 
-### Deployed on [Vercel](https://vercel.com/josephines-projects-f4b00ea6/101150792-lab-test2-comp3133/6AEfEm29zd2ZBPJFrs2WTLWcLZtG)
+### Deployed on [Vercel](https://101150792-lab-test2-com-git-bbd689-josephines-projects-f4b00ea6.vercel.app)
 
 # 101150792 - LabTest2 - Comp3133
 
